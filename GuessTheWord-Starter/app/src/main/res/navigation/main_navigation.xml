@@ -46,13 +46,12 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@+id/title_destination" />
+            app:popUpTo="@id/title_destination" />
     </fragment>
     <fragment
         android:id="@+id/score_destination"
         android:name="com.example.android.guesstheword.screens.score.ScoreFragment"
-        android:label="score_fragment"
-        tools:layout="@layout/score_fragment">
+        android:label="score_fragment">
         <action
             android:id="@+id/action_restart"
             app:destination="@+id/game_destination"
@@ -62,8 +61,11 @@
             app:popExitAnim="@anim/slide_out_left"
             app:popUpTo="@+id/title_destination" />
         <argument
-            android:name="score"
+            android:name="scorenav"
             android:defaultValue="0"
             app:argType="integer" />
+        <argument android:name="timeinnav"
+            app:argType="long"
+            android:defaultValue="0L" />
     </fragment>
 </navigation>

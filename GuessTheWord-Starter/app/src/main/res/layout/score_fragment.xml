@@ -59,6 +59,38 @@
             app:layout_constraintVertical_chainStyle="packed"
             tools:text="40" />
 
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/grey_text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.728"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/in"
+            tools:text="0:00" />
+
+        <TextView
+            android:id="@+id/in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/in"
+            android:textColor="@color/black_text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/score_text"
+            app:layout_constraintStart_toEndOf="@+id/score_text"
+            app:layout_constraintTop_toTopOf="@+id/score_text" />
+
         <Button
             android:id="@+id/play_again_button"
             android:layout_width="wrap_content"
@@ -66,7 +98,7 @@
             android:layout_marginBottom="32dp"
             android:text="@string/play_again"
             android:theme="@style/GoButton"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
